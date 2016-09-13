@@ -1,0 +1,52 @@
+<PISI>
+    <Source>
+        <Name>libnfsidmap</Name>
+        <Packager>
+            <Name>Justin Zobel</Name>
+            <Email>justin@solus-project.com</Email>
+        </Packager>
+        <License>BSD-3-Clause</License>
+        <PartOf>network.utils</PartOf>
+        <Summary xml:lang="en">NFS ID Mapping he libnfsidmap package contains a library to help mapping id&apos;s, mainly for NFSv4.</Summary>
+        <Description xml:lang="en">The libnfsidmap package contains a library to help mapping id&apos;s, mainly for NFSv4.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>libnfsidmap</Name>
+        <Summary xml:lang="en">NFS ID Mapping he libnfsidmap package contains a library to help mapping id&apos;s, mainly for NFSv4.</Summary>
+        <Description xml:lang="en">The libnfsidmap package contains a library to help mapping id&apos;s, mainly for NFSv4.
+</Description>
+        <PartOf>network.utils</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/libnfsidmap/nsswitch.so</Path>
+            <Path fileType="library">/usr/lib64/libnfsidmap/static.so</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>libnfsidmap-devel</Name>
+        <Summary xml:lang="en">Development files for libnfsidmap</Summary>
+        <Description xml:lang="en">The libnfsidmap package contains a library to help mapping id&apos;s, mainly for NFSv4.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">libnfsidmap</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-09-13</Date>
+            <Version>0.26</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Justin Zobel</Name>
+            <Email>justin@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>
