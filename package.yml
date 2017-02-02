@@ -1,8 +1,8 @@
 name       : libnfsidmap
-version    : 0.26
-release    : 1
+version    : 0.27
+release    : 2
 source     :
-    - https://fedorapeople.org/~steved/libnfsidmap/0.26/libnfsidmap-0.26.tar.bz2 : 391cd35a8aa48bcba1678b483c3e2525d0990eca963bb035962fcf1e3ee2a8bf
+    - https://fedorapeople.org/~steved/libnfsidmap/0.27/libnfsidmap-0.27.tar.gz : 9c5916b644b85c6f5e4e1bdd0d23caa6c956ee742b5a27be6a618311a924ef8e
 license    : BSD-3-Clause
 component  : network.utils
 summary    : NFS ID Mapping he libnfsidmap package contains a library to help mapping id's, mainly for NFSv4.
